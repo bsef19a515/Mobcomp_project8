@@ -2,7 +2,10 @@ package com.example.myapplication7;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,4 +19,11 @@ public class MainActivity extends AppCompatActivity {
         btn= findViewById(R.id.button);
 
     }
-}
+
+    public void opengit(View v) {
+        Uri webpage = Uri.parse("https://github.com/bsef19a515");
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        startActivity(intent);
+    }
+
+    }

@@ -30,6 +30,7 @@
         android:backgroundTint="#1E8C82"
         android:text="@string/git"
         android:textSize="20sp"
+        android:onClick="opengit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

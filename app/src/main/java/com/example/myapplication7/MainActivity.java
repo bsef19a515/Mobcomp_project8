@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btn;
 
     @Override
@@ -16,14 +16,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn= findViewById(R.id.button);
+        btn = findViewById(R.id.button);
+        btn.setOnClickListener(this);
 
-    }
 
-    public void opengit(View v) {
+        }
+    @Override
+    public void onClick(View view) {
         Uri webpage = Uri.parse("https://github.com/bsef19a515");
         Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
         startActivity(intent);
     }
-
     }
+
+
+
+

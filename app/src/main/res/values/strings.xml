@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Application7</string>
     <string name="welcome">Welcome To My New Page</string>
-    <string name="git">Go To Github Repository</string>
+    <string name="git">Go To Github</string>
 
 
 </resources>
